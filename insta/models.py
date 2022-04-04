@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.exceptions import ObjectDoesNotExist
-from django.template.defaultfilters import slugify
+# from django.template.defaultfilters import slugify
 
 
 class Image(models.Model):
