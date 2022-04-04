@@ -36,7 +36,7 @@ def BlogPostLike(request,pk):
 
     return HttpResponseRedirect(reverse('BlogPostLike', args=[str(pk)]))
 
-# @login_required(login_url='/accounts/login/')
+@login_required(login_url='/accounts/register/')
 def home(request):
     current_user = request.GET.get('user')
     logged_in_user = request.user.username
