@@ -4,12 +4,14 @@ beautifulsoup4==4.10.0
 certifi==2021.10.8
 charset-normalizer==2.0.12
 cloudinary==1.29.0
+confusable-homoglyphs==3.2.0
 dj-database-url==0.5.0
 Django==4.0.3
 django-bootstrap4==22.1
 django-cloudinary-storage==0.3.0
 django-crispy-forms==1.14.0
 django-heroku==0.3.1
+django-registration==3.2
 django-tinymce==3.4.0
 gunicorn==20.1.0
 idna==3.3
