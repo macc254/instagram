@@ -76,12 +76,12 @@ class Profile(models.Model):
     def search_profile(cls, name):
         return cls.objects.filter(user__username__icontains=name).all()
 
-    @receiver(post_save, sender=User)
-    def create_user_profile(sender, instance, created, **kwargs):
-        try:
-            instance.Profile.save()
-        except ObjectDoesNotExist:
-            Profile.objects.create(user=instance)
+    # @receiver(post_save, sender=User)
+    # def create_user_profile(sender, instance, created, **kwargs):
+    #     try:
+    #         instance.Profile.save()
+    #     except ObjectDoesNotExist:
+    #         Profile.objects.create(user=instance)
 class NewsLetterRecipients(models.Model):
     is_email_verified = models.BooleanField(default=False)
     name = models.CharField(max_length = 30)

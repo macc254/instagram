@@ -20,8 +20,9 @@ import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# LOGIN_REDIRECT_URL = "home"
-# LOGOUT_REDIRECT_URL = "home" 
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home" 
+REGISTER_REDIRECT_URL = "home"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -183,3 +184,21 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
+EMAIL_USE_TLS=True
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER='cherotichm23@gmail.com'
+EMAIL_HOST_PASSWORD='cherotich1998'
+SECRET_KEY='django-insecure-rc*$(+4x!d683l0e4dpq@$n@6-^c_y_5d@3@4=9!#2erfk+*$b'
+DEBUG=True
+DB_NAME='insta'
+DB_USER='moringa'
+DB_PASSWORD='2015'
+DB_HOST='127.0.0.1'
+MODE='prod'
+ALLOWED_HOSTS='.localhost','.herokuapp.com','.127.0.0.1'
+DISABLE_COLLECTSTATIC=1
+CLOUD_NAME='mercy55'
+API_KEY='251291823189247'
+API_SECRET='mPPLekFr0RDj3thANOxt9uGfOX8'
+DATABASE_URL='postgres://dxofnikdjnvvga:5e8a36c08de7bc4a48b0947fa3919f48df7bd29795a8a83c3479cb35ffc5a306@ec2-52-73-155-171.compute-1.amazonaws.com:5432/d54gpntf8maqqb'
